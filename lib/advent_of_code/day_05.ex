@@ -20,7 +20,7 @@ defmodule AdventOfCode.Day05 do
         end
       end
     catch
-      v -> v+1
+      v -> v + 1
     end
   end
 
