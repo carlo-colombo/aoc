@@ -3,19 +3,28 @@ defmodule AdventOfCode.Day04Test do
 
   import AdventOfCode.Day04
 
-  @tag :skip
-  test "part1" do
-    input = nil
-    result = part1(input)
+  test "example 1" do
+    input = "ecl:gry pid:860033327 eyr:2020 hcl:#fffffd
+byr:1937 iyr:2017 cid:147 hgt:183cm
 
-    assert result
+iyr:2013 ecl:amb cid:350 eyr:2023 pid:028048884
+hcl:#cfa07d byr:1929
+
+hcl:#ae17e1 iyr:2013
+eyr:2024
+ecl:brn pid:760753108 byr:1931
+hgt:179cm
+
+hcl:#cfa07d eyr:2025 pid:166559648
+iyr:2011 ecl:brn hgt:59in
+    "
+
+    assert 2 == part1(input)
   end
 
-  @tag :skip
-  test "part2" do
-    input = nil
-    result = part2(input)
+  test "part1" do
+    input = File.read!("./lib/advent_of_code/04_input.txt")
 
-    assert result
+    assert 208 == part1(input)
   end
 end
