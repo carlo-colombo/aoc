@@ -26,11 +26,11 @@ defmodule AdventOfCode.Day06 do
     |> Enum.map(fn {group_size, answers} ->
       {
         group_size,
-        Enum.reduce(answers,%{}, &Map.update(&2,&1,1, fn v->v+1 end))
+        Enum.reduce(answers, %{}, &Map.update(&2, &1, 1, fn v -> v + 1 end))
       }
     end)
-    |> Enum.map(fn  {group_size, answers} ->
-        Enum.count(answers, fn {_,v}-> v == group_size end)
+    |> Enum.map(fn {group_size, answers} ->
+      Enum.count(answers, fn {_, v} -> v == group_size end)
     end)
     |> Enum.sum()
   end
