@@ -3,12 +3,25 @@ defmodule AdventOfCode.Day08Test do
 
   import AdventOfCode.Day08
 
-  @tag :skip
-  test "part1" do
-    input = nil
-    result = part1(input)
+  test "example 1" do
+    input = "nop +0
+acc +1
+jmp +4
+acc +3
+jmp -3
+acc -99
+acc +1
+jmp -4
+acc +6
+"
 
-    assert result
+    assert 5 == part1(input)
+  end
+
+  test "part1" do
+    input = File.read!("./lib/advent_of_code/08_input.txt")
+
+    assert 1200 == part1(input)
   end
 
   @tag :skip
