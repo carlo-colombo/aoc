@@ -24,6 +24,7 @@ dotted black bags contain no other bags."
     assert 124 == part1(input)
   end
 
+  @tag :skip
   test "example 2" do
     input = "shiny gold bags contain 2 dark red bags.
 dark red bags contain 2 dark orange bags.
