@@ -39,6 +39,6 @@ defmodule AdventOfCode.Day09Test do
   test "part2" do
     input = File.read!("./lib/advent_of_code/09_input.txt")
 
-    assert 23_278_925 == part2({input, 23_278_925})
+    assert 4011064 == part2({input, 23_278_925})
   end
 end
