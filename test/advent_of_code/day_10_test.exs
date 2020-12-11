@@ -3,7 +3,6 @@ defmodule AdventOfCode.Day10Test do
 
   import AdventOfCode.Day10
 
-
   test "example 1" do
     input = "28
 33
@@ -42,9 +41,8 @@ defmodule AdventOfCode.Day10Test do
   test "part1" do
     input = File.read!("./lib/advent_of_code/10_input.txt")
 
-    assert 23 == part1(input)
+    assert 1920 == part1(input)
   end
-
 
   @tag :skip
   test "part2" do
