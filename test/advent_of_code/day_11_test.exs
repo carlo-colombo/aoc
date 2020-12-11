@@ -3,12 +3,25 @@ defmodule AdventOfCode.Day11Test do
 
   import AdventOfCode.Day11
 
-  @tag :skip
-  test "part1" do
-    input = nil
-    result = part1(input)
+  test "example 1" do
+    input = "L.LL.LL.LL
+LLLLLLL.LL
+L.L.L..L..
+LLLL.LL.LL
+L.LL.LL.LL
+L.LLLLL.LL
+..L.L.....
+LLLLLLLLLL
+L.LLLLLL.L
+L.LLLLL.LL"
 
-    assert result
+    assert 37 == part1(input)
+  end
+
+  test "part1" do
+    input = File.read!("./lib/advent_of_code/11_input.txt")
+
+    assert 2483 == part1(input)
   end
 
   @tag :skip
